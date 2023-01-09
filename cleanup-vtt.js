@@ -27,7 +27,7 @@ for (const match of matches) {
   const { name, words } = match.groups;
 
   if (match.groups.name === prevName) {
-    content += words;
+    content += ' ' + words;
   } else {
     content += `\n${name}${words}`;
   }
